@@ -1,0 +1,25 @@
+{
+  "name": "k-messages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanishk-00/K-Messages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanishk-00/K-Messages/issues"
+  },
+  "homepage": "https://github.com/Kanishk-00/K-Messages#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0",
+    "socket.io": "^4.5.1"
+  }
+}
