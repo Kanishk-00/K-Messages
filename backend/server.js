@@ -1,13 +1,13 @@
-const express = require("express");
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 const connectDB = require("./config/db");
+const express = require("express");
 const dotenv = require("dotenv");
 const userRoutes = require("./routes/userRoutes");
 const chatRoutes = require("./routes/chatRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
-const path = require("path");
 
-dotenv.config();
 connectDB();
 const app = express();
 
